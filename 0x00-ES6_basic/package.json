@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "zero": "node 0-main.js",
     "one": "node 1-main.js",
-    "two": "node 2-main.js"
+    "two": "node 2-main.js",
+    "three": "node 3-main.js"
   },
   "dependencies": {
   },
