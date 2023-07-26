@@ -10,7 +10,8 @@
     "one": "node 1-main.js",
     "two": "node 2-main.js",
     "three": "node 3-main.js",
-    "four": "node 4-main.js"
+    "four": "node 4-main.js",
+    "five": "node 5-main.js"
   },
   "dependencies": {
   },
