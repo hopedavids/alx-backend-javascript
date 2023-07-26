@@ -17,7 +17,8 @@
     "eight": "node 8-main.js",
     "nine": "node 9-main.js",
     "ten": "node 10-main.js",
-    "eleven": "node 11-main.js"
+    "eleven": "node 11-main.js",
+    "twelve": "node 12-main.js"
   },
   "dependencies": {
   },
