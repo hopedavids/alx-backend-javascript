@@ -6,7 +6,7 @@
 
 function getFullResponseFromAPI(success){
     return new Promise((resolve, reject) => {
-        if (resolve){
+        if (success){
             resolve({
                 'status': 200,
                 'body': 'Success'
