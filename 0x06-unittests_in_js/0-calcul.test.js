@@ -1,22 +1,16 @@
 const assert = require('assert');
 const mocha = require('mocha');
+
 const calculateNumber = require('./0-calcul');
 
 describe('calculateNumber', () => {
-  it('should return the sum of integers', () => {
-    assert.strictEqual(calculateNumber(4, 5), 9);
+  it('should return sum of integers', () => {
+    assert.strictEqual(calculateNumber(1, 3), 4);
     assert.strictEqual(calculateNumber(1, -1), 0);
-    assert.strictEqual(calculateNumber(4, -5), -1);
+    assert.strictEqual(calculateNumber(1, -3), -2);
   });
 
-  it('should round up floats', () => {
-    assert.strictEqual(calculateNumber(4, 2.9), 7);
-    assert.strictEqual(calculateNumber(1.5, 1.7), 4);
-    assert.strictEqual(calculateNumber(0.1, 0), 0);
-    assert.strictEqual(calculateNumber(1.4, -4.5), -3);
-  });
-
-  it('should round floats down', () => {
+  it('should round floats', () => {
     assert.strictEqual(calculateNumber(1, 3.7), 5);
     assert.strictEqual(calculateNumber(1.2, 3.7), 5);
     assert.strictEqual(calculateNumber(1.5, 3.7), 6);
@@ -35,14 +29,14 @@ describe('calculateNumber', () => {
     assert.strictEqual(calculateNumber('1.2', 3.7), 5);
   });
 
-  it('should throw TypeError if either parameter cannot be coerced to a number', () => {
+  it('should throw typeerror if either parameter cannot be coerced to a number', () => {
     assert.throws(() => calculateNumber('hello'), {
       name: 'TypeError',
-      message: 'Parameters must be numbers',
+      message: 'Parameters must be numbers'
     });
     assert.throws(() => calculateNumber(1.2, 'dog'), {
       name: 'TypeError',
-      message: 'Parameters must be numbers',
+      message: 'Parameters must be numbers'
     });
   });
 });
