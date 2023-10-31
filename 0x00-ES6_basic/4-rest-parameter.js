@@ -1,7 +1,3 @@
-#!/usr/bin/node
-
-"use strict";
-
-export default function returnHowManyArguments() {
-	return arguments.length;
+export default function returnHowManyArguments(...args) {
+    return args.length;
 }
