@@ -6,6 +6,9 @@ export default function createIteratorObject(report) {
   let currentEmployeeIndex = 0;
 
   const iterator = {
+    [Symbol.iterator]() {
+      return this;
+    },
     next() {
       if (currentDepartmentIndex >= departments.length) {
         return { done: true };
@@ -29,4 +32,3 @@ export default function createIteratorObject(report) {
 
   return iterator;
 }
-
